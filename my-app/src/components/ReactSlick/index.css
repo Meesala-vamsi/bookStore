@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.slick-image{
+    height: 400px;
+    width: 100%;
+}
+.slider-container{
+    margin: auto;
+    margin-top: 15px;
+    width: 96%;
+}
+.slider-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:768px){
+    .slick-image{
+        height: 250px;
+    }
+    .slider-container{
+        width: 93%;
+    }
+}
