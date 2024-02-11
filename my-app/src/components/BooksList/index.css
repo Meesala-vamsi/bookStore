@@ -1,0 +1,100 @@
+.book-list-heading{
+    font-size: 27px;
+    color: #000;
+}
+
+.book-list-main-heading{
+    font-size: 25px;
+    font-family: "Bree Serif";
+}
+
+.book-list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+    padding: 17px;
+    font-weight: 100;
+}
+.book-list-success-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.book-list-success-container ul{
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px;
+    color: #000;
+}
+
+.booklist-items{
+    width: 20%;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+}
+
+.book-list-like-button{
+    align-self: flex-end;
+}
+
+.book-list-heading{
+    font-size: 17px;
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 7px;
+}
+.book-list-price{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:768px){
+    .book-list-heading{
+        font-size: 20px;
+    }
+    .book-list-success-container{
+
+    }
+
+    .booklist-section-details{
+       
+    }
+    .book-list-heading{
+        font-size: 12px;
+        max-width: 90px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: 6px;
+    }
+
+    .booklist-items{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .booklist-list-container{
+
+    }
+    .book-list-price{
+        font-size: 12px;
+        margin-bottom: 6px;
+        color: #000;
+        font-weight: bold;
+    }
+    .book-list-like-button{
+        align-self: flex-end;
+        margin-left: 4px;
+    }
+}
