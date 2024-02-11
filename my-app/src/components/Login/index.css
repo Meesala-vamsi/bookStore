@@ -1,9 +1,4 @@
-.login-container::before{
-    content: '';
 
-    inset: 0;
-    position: absolute;
-}
 .login-container{
     background-image: url("https://res.cloudinary.com/db0f83m76/image/upload/v1707659549/mikolaj-DCzpr09cTXY-unsplash_ctnq4c.jpg");
     height: 100vh;
