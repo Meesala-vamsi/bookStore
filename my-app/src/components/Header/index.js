@@ -7,6 +7,7 @@ import { FaHeart } from "react-icons/fa";
 import { IoMenu,IoCloseSharp } from "react-icons/io5";
 import { FaShoppingCart } from "react-icons/fa";
 import { useRouting } from '../../Context/ReactContext';
+import Cookies from 'js-cookie';
 import './index.css'
 
 const Header=(props)=>{
@@ -32,7 +33,11 @@ const Header=(props)=>{
     }
 
     const onClickLogout=()=>{
-        history.push('/login')
+        const removeToken=Cookies.remove('jwt_token')
+        if(removeToken===undefined){
+            history.replace('/login')
+        }
+        
     }
 
     return(

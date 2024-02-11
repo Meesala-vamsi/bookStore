@@ -1,8 +1,8 @@
-import { useState,useEffect } from "react"
-import cookies from 'js-cookie'
+import { useState } from "react"
+import Cookies from "js-cookie"
+import { Redirect } from "react-router-dom/cjs/react-router-dom.min"
 
 import './index.css'
-import Cookies from "js-cookie"
 
 const Login=(props)=>{
 
@@ -20,6 +20,7 @@ const Login=(props)=>{
 
     const getJwtToken=(token)=>{
         Cookies.set('jwt_token',token,{expires:30})
+        history.replace('/')
     }
 
     const onSubmitDetails=async (event)=>{
@@ -49,8 +50,10 @@ const Login=(props)=>{
         
     }
 
-
-
+    const token = Cookies.get('jwt_token')
+    if (token!==undefined){
+        <Redirect to='/'/>
+    }
     return(
         <div className="login-container">
             <form onSubmit={onSubmitDetails} className="form-container">
